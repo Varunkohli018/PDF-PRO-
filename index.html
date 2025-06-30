@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Toolkit Pro</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+</head>
+<body class="dark">
+  <header>
+    <h1>Welcome</h1>
+    <div class="tabs">
+      <button onclick="switchTab('recent')" class="active">Recent</button>
+      <button onclick="switchTab('starred')">Starred</button>
+      <button onclick="switchTab('device')">On device</button>
+    </div>
+  </header>  <main id="fileListContainer">
+    <ul id="fileList" class="file-list"></ul>
+  </main><button class="fab" onclick="document.getElementById('pdfText').click()">+</button>
+
+  <nav class="bottom-nav">
+    <button class="active">Home</button>
+    <button>Files</button>
+    <button>Shared</button>
+    <button>Search</button>
+  </nav>  <input type="file" accept="application/pdf" id="pdfText" multiple hidden onchange="loadFiles(event)">
+  <script src="script.js"></script>
+</body>
+</html>
