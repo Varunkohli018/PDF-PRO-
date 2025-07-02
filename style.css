@@ -1,2 +1,129 @@
-/* style.css */
-body.dark { margin: 0; font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; } header { padding: 16px; background-color: #1e1e1e; } .tabs { display: flex; margin-top: 8px; } .tabs button { flex: 1; padding: 10px; background: none; color: #fff; border: none; border-bottom: 2px solid transparent; font-weight: bold; cursor: pointer; } .tabs button.active { border-color: red; } .file-list { list-style: none; padding: 0 16px; } .file-list li { background-color: #1e1e1e; margin: 8px 0; padding: 10px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; } .file-list li span { flex: 1; } .file-list li button { background: none; border: none; color: #f44336; margin-left: 8px; cursor: pointer; } .bottom-nav { position: fixed; bottom: 0; left: 0; width: 100%; display: flex; justify-content: space-around; padding: 10px 0; background-color: #1e1e1e; } .bottom-nav button { background: none; border: none; color: white; font-weight: bold; font-size: 16px; } .bottom-nav button.active { color: #f44336; } .fab { position: fixed; bottom: 70px; right: 20px; width: 56px; height: 56px; background-color: #f44336; color: white; border: none; border-radius: 50%; font-size: 24px; cursor: pointer; }
+body.dark {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+header {
+  padding: 16px;
+  background-color: #1e1e1e;
+}
+
+.tabs {
+  display: flex;
+  margin-top: 8px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 10px;
+  background: none;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  border-color: red;
+}
+
+.file-list {
+  list-style: none;
+  padding: 0 16px;
+}
+
+.file-list li {
+  background-color: #1e1e1e;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.file-list li span {
+  flex: 1;
+}
+
+.file-list li button {
+  background: none;
+  border: none;
+  color: #f44336;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: #1e1e1e;
+}
+
+.bottom-nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.bottom-nav button.active {
+  color: #f44336;
+}
+
+/* Floating Action Button Container */
+.fab-container {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+}
+
+/* FAB Main Button */
+.fab-btn {
+  background-color: #C61C1C;
+  color: white;
+  font-size: 32px;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+/* FAB Menu */
+.fab-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.fab-menu li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  color: #333;
+}
+
+.fab-menu li:hover {
+  background-color: #f9f9f9;
+}
+
+.hidden {
+  display: none;
+}
